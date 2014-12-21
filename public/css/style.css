@@ -1,0 +1,11 @@
+body{
+  background-color: #24AC64;
+}
+
+#cabecera{
+  height: 150px;
+}
+
+.centrar{
+  text-align: center;
+}
