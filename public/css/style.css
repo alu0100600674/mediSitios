@@ -9,3 +9,7 @@ body{
 .centrar{
   text-align: center;
 }
+
+#contenido{
+  padding: 3%;
+}

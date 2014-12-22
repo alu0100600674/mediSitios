@@ -19,9 +19,19 @@
     <div id="menu">
       <nav class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
-          <div class="navbar-header">
-            <a href="/">Inicio</a>
-
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="/">Inicio</a></li>
+              <li><a href="/recomendados">Sitios recomendados</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Buscar<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="/buscar-sitio">Sitio</a></li>
+                  <li><a href="/buscar-enfermedad">Enfermedad</a></li>
+                  <li><a href="/buscar-beneficio">Beneficio</a></li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -34,8 +44,12 @@
     <div id="pie">
       <nav class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
-          <div class="navbar-header">
-            Jonay Suárez Armas | alu0100600674@ull.edu.es | Gestión del Conocimiento para las Organizaciones
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a>Jonay Suárez Armas</a></li>
+              <li><a>alu0100600674@ull.edu.es</a></li>
+              <li><a>Gestión del Conocimiento para las Organizaciones</a></li>
+            </ul>
           </div>
         </div>
       </nav>
