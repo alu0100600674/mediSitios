@@ -5,6 +5,7 @@ class Lugares
   property :nombre, Text
 
   has n, :beneficios
+  has n, :enfermedad
 end
 
 class Beneficio
@@ -13,8 +14,7 @@ class Beneficio
   property :id, Serial
   property :n_ben, Text
 
-  belongs to, :lugares
-  belongs to, :enfermedad
+  belongs_to :lugares
 end
 
 class Enfermedad
@@ -23,5 +23,5 @@ class Enfermedad
   property :id, Serial
   property :n_enf, Text
 
-  has n, :beneficios
+  belongs_to :lugares
 end
