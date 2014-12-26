@@ -6,6 +6,10 @@ class Lugares
 
   has n, :beneficios
   has n, :enfermedad
+
+  def self.buscarsitio(id)
+    repository(:default).adapter.select("SELECT * FROM Lugares WHERE UPPER(nombre) like '%#{id}%'")
+  end
 end
 
 class Beneficio
@@ -15,6 +19,10 @@ class Beneficio
   property :n_ben, Text
 
   belongs_to :lugares
+
+  # def self.buscarbeneficio(id)
+  #   DataMapper.repository.adapter.select("SELECT nombre FROM Beneficio WHERE UPPER(n_ben) like '%#{id}%'"
+  # end
 end
 
 class Enfermedad
@@ -24,4 +32,8 @@ class Enfermedad
   property :n_enf, Text
 
   belongs_to :lugares
+
+  # def self.buscarenfermedad(id)
+  #   DataMapper.repository.adapter.select("SELECT nombre FROM Enfermedad WHERE UPPER(n_enf) like '%#{id}%'"
+  # end
 end

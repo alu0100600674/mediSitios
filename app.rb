@@ -23,11 +23,18 @@ get '/' do
   erb :index
 end
 
-get'/recomendados' do
+get '/recomendados' do
   erb :recomendados
 end
 
-get'/buscar-sitio' do
+get '/buscar-sitio' do
+  erb :bsitio
+end
+
+post '/buscar-sitio' do
+  lugar = params[:lugares].upcase
+  @listado = Producto.buscarsitio(lugar)
+
   erb :bsitio
 end
 
@@ -35,6 +42,14 @@ get '/buscar-enfermedad' do
   erb :benfermedad
 end
 
+post '/buscar-enfermedad' do
+
+end
+
 get '/buscar-beneficio' do
   erb :bbeneficio
+end
+
+post '/buscar-beneficio' do
+
 end
