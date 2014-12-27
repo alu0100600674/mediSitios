@@ -33,7 +33,7 @@ end
 
 post '/buscar-sitio' do
   lugar = params[:lugares].upcase
-  @listado = Producto.buscarsitio(lugar)
+  @listado = Lugares.buscarsitio(lugar)
 
   erb :bsitio
 end
@@ -52,4 +52,13 @@ end
 
 post '/buscar-beneficio' do
 
+end
+
+get '/datos-de-prueba' do
+  Lugares.first_or_create(:nombre => "aaaa")
+  Lugares.first_or_create(:nombre => "bbbb")
+  Lugares.first_or_create(:nombre => "cccc")
+  Lugares.first_or_create(:nombre => "dddd")
+  Lugares.first_or_create(:nombre => "eeee")
+  Lugares.first_or_create(:nombre => "ffff")
 end

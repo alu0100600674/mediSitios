@@ -1,8 +1,36 @@
 <h3>Busca un lugar y descubre sus características</h3>
 <br>
-<form class="form-inline">
+<form class="form-inline" action="/buscar-sitio" method="post">
   <div class="form-group">
-    <input type="text" class="form-control" id="in-lugar" autofocus size="75" placeholder="Introduce el nombre de un lugar">
+    <input type="text" class="form-control" id="in-lugar" name="lugares" autofocus size="75" placeholder="Introduce el nombre de un lugar">
   </div>
   <button type="submit" class="btn btn-default">Buscar</button>
 </form>
+
+<% if @listado !=  nil %>
+  <p>
+    <br>
+    <% if @listado.length > 0 %>
+      <center><h4>Resultados de la búsqueda</h4></center>
+
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <td class="col-md-6"><b> ID </b></td>
+            <td class="col-md-6"><b> Lugar </b></td>
+          </tr>
+        </thead>
+        <tbody>
+          <% @listado.each do |valor| %>
+            <tr>
+              <td> <%= valor.id %> </td>
+              <td> <%= valor.nombre %> </td>
+            </tr>
+          <% end %>
+        <tbody>
+      </table>
+    <% else %>
+      <center><h4>No se han obtenido resultados de la búsqueda</h4></center>
+    <% end %>
+  </p>
+<% end %>
