@@ -16,15 +16,17 @@
       <table class="table table-hover">
         <thead>
           <tr>
-            <td class="col-md-6"><b> ID </b></td>
-            <td class="col-md-6"><b> Lugar </b></td>
+            <td class="col-md-4"><b> Lugar </b></td>
+            <td class="col-md-4"><b> Provincia </b></td>
+            <td class="col-md-4"><b> País </b></td>
           </tr>
         </thead>
         <tbody>
           <% @listado.each do |valor| %>
             <tr>
-              <td> <%= valor.id %> </td>
               <td> <%= valor.nombre %> </td>
+              <td> <%= valor.provincia %> </td>
+              <td> <%= valor.pais %> </td>
             </tr>
           <% end %>
         <tbody>

@@ -55,10 +55,11 @@ post '/buscar-beneficio' do
 end
 
 get '/datos-de-prueba' do
-  Lugares.first_or_create(:nombre => "aaaa")
-  Lugares.first_or_create(:nombre => "bbbb")
-  Lugares.first_or_create(:nombre => "cccc")
-  Lugares.first_or_create(:nombre => "dddd")
-  Lugares.first_or_create(:nombre => "eeee")
-  Lugares.first_or_create(:nombre => "ffff")
+  Lugares.first_or_create(:nombre => "Tenerife", :provincia => "S/C de Tenerife", :pais => "España")
+  Lugares.first_or_create(:nombre => "La Palma", :provincia => "S/C de Tenerife", :pais => "España")
+  Lugares.first_or_create(:nombre => "La Gomera", :provincia => "S/C de Tenerife", :pais => "España")
+  Lugares.first_or_create(:nombre => "El Hierro", :provincia => "S/C de Tenerife", :pais => "España")
+  Lugares.first_or_create(:nombre => "Gran Canaria", :provincia => "Las Palmas de Gran Canaria", :pais => "España")
+  Lugares.first_or_create(:nombre => "Lanzarote", :provincia => "Las Palmas de Gran Canaria", :pais => "España")
+  Lugares.first_or_create(:nombre => "Fuerteventura", :provincia => "Las Palmas de Gran Canaria", :pais => "España")
 end

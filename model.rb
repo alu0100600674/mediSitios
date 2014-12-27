@@ -3,12 +3,14 @@ class Lugares
 
   property :id, Serial
   property :nombre, Text
+  property :provincia, Text
+  property :pais, Text
 
   has n, :beneficios
   has n, :enfermedad
 
   def self.buscarsitio(id)
-    repository(:default).adapter.select("SELECT * FROM Lugares WHERE UPPER(nombre) like '%#{id}%'")
+    repository(:default).adapter.select("SELECT * FROM Lugares WHERE UPPER(nombre) like '%#{id}%' OR UPPER(provincia) like '%#{id}%' OR UPPER(pais) like '%#{id}%'")
   end
 end
 
