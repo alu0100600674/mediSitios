@@ -1,8 +1,40 @@
 <h3>Busca lugares con respecto a un beneficio</h3>
 <br>
-<form class="form-inline">
+<form class="form-inline" action="/buscar-beneficio" method="post">
   <div class="form-group">
-    <input type="text" class="form-control" id="in-beneficio" autofocus size="75" placeholder="Introduce una enfermedad">
+    <input type="text" class="form-control" id="in-beneficio" name="beneficios" autofocus size="75" placeholder="Introduce una enfermedad">
   </div>
   <button type="submit" class="btn btn-default">Buscar</button>
 </form>
+
+<% if @listado !=  nil %>
+  <p>
+    <br>
+    <% if @listado.length > 0 %>
+      <center><h4>Resultados de la búsqueda</h4></center>
+
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <td class="col-md-3"><b> Beneficio </b></td>
+            <td class="col-md-3"><b> Lugar </b></td>
+            <td class="col-md-3"><b> Provincia </b></td>
+            <td class="col-md-3"><b> País </b></td>
+          </tr>
+        </thead>
+        <tbody>
+          <% @listado.each do |valor| %>
+            <tr>
+              <td> <%= valor.n_ben %> </td>
+              <td> <%= valor.nombre %> </td>
+              <td> <%= valor.provincia %> </td>
+              <td> <%= valor.pais %> </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    <% else %>
+      <center><h4>No se han obtenido resultados de la búsqueda</h4></center>
+    <% end %>
+  </p>
+<% end %>

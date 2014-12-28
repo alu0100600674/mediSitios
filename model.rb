@@ -22,9 +22,9 @@ class Beneficio
 
   belongs_to :lugares
 
-  # def self.buscarbeneficio(id)
-  #   DataMapper.repository.adapter.select("SELECT nombre FROM Beneficio WHERE UPPER(n_ben) like '%#{id}%'"
-  # end
+  def self.buscarsitio(id)
+    DataMapper.repository.adapter.select("SELECT nombre FROM Beneficios NATURAL JOIN Lugares WHERE Beneficios.id == Lugares.id AND UPPER(n_ben) like '%#{id}%'")
+  end
 end
 
 class Enfermedad
@@ -35,7 +35,7 @@ class Enfermedad
 
   belongs_to :lugares
 
-  # def self.buscarenfermedad(id)
-  #   DataMapper.repository.adapter.select("SELECT nombre FROM Enfermedad WHERE UPPER(n_enf) like '%#{id}%'"
-  # end
+  def self.buscarsitio(id)
+    DataMapper.repository.adapter.select("SELECT nombre FROM Enfermedads NATURAL JOIN Lugares WHERE Enfermedads.id == Lugares.id AND UPPER(n_enf) like '%#{id}%'")
+  end
 end
