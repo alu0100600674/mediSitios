@@ -69,5 +69,9 @@ get '/datos-de-prueba' do
   Lugares.first_or_create(:nombre => "Lanzarote", :provincia => "Las Palmas de Gran Canaria", :pais => "España")
   Lugares.first_or_create(:nombre => "Fuerteventura", :provincia => "Las Palmas de Gran Canaria", :pais => "España")
 
+  Enfermedad.first_or_create(:lugares_id => 1, :n_enf => "Gripe")
+
+  Beneficio.first_or_create(:lugares_id => 1, :n_ben => "Buen tiempo")
+
   redirect '/'
 end
