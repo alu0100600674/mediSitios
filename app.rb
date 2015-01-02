@@ -103,7 +103,7 @@ get '/datos-de-prueba' do
 end
 
 get '/datos' do
-  xml = RestClient.get "https://raw.githubusercontent.com/alu0100600674/mediSitios/master/public/lugares.xml"
+  xml = RestClient.get "https://raw.githubusercontent.com/alu0100600674/mediSitios/master/public/xml/lugares.xml"
   datos = XmlSimple.xml_in(xml.to_s)['lugar']
 
 	datos.each do |i|
