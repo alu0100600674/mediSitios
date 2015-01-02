@@ -13,8 +13,8 @@ class Lugares
     repository(:default).adapter.select("SELECT * FROM Lugares WHERE UPPER(nombre) like '%#{id}%' OR UPPER(provincia) like '%#{id}%' OR UPPER(pais) like '%#{id}%'")
   end
 
-  def self.buscarporid(ide)
-    repository(:default).adapter.select("SELECT * FROM Lugares WHERE id like '%#{ide}%'")
+  def self.buscarporid(id1, id2, id3, id4)
+    repository(:default).adapter.select("SELECT * FROM Lugares WHERE id like '%#{id1}%' OR id like '%#{id2}%' OR id like '%#{id3}%' OR id like '%#{id4}%'")
   end
 end
 
