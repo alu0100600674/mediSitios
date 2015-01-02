@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 require 'sinatra'
 require 'data_mapper'
+require 'restclient'
+require 'xmlsimple'
 
 
 DataMapper.setup( :default, ENV['DATABASE_URL'] ||
@@ -24,7 +26,7 @@ get '/' do
 end
 
 get '/recomendados' do
-  TOTAL = 10
+  TOTAL = 8
   N_SITIOS = 4
 
   sitio = Array.new
@@ -96,6 +98,20 @@ get '/datos-de-prueba' do
   Enfermedad.first_or_create(:lugares_id => 1, :n_enf => "Gripe")
 
   Beneficio.first_or_create(:lugares_id => 1, :n_ben => "Buen tiempo")
+
+  redirect '/'
+end
+
+get 'datos' do
+  xml = RestClient.get "https://raw.githubusercontent.com/alu0100600674/mediSitios/master/public/lugares.xml"
+  datos = XmlSimple.xml_in(xml.to_s)['lugar']
+
+	datos.each do |i|
+		nombre = i["nombre"].to_s.delete "[\"]"
+		provincia = i["provincia"].to_s.delete "[\"]"
+		pais = i["pais"].to_s.delete "[\"]"
+		Lugares.first_or_create(:nombre => nombre, :provincia => provincia, :pais => pais)
+	end
 
   redirect '/'
 end
