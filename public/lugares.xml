@@ -1,8 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document>
   <lugar>
+    <nombre>Tenerife</nombre>
+    <provincia>S/C de Tenerife</provincia>
+    <pais>España</pais>
+  </lugar>
+  <lugar>
+    <nombre>La Palma</nombre>
+    <provincia>S/C de Tenerife</provincia>
+    <pais>España</pais>
+  </lugar>
+  <lugar>
+    <nombre>La Gomera</nombre>
+    <provincia>S/C de Tenerife</provincia>
+    <pais>España</pais>
+  </lugar>
+  <lugar>
+    <nombre>El Hierro</nombre>
+    <provincia>S/C de Tenerife</provincia>
+    <pais>España</pais>
+  </lugar>
+  <lugar>
+    <nombre>Gran Canaria</nombre>
+    <provincia>Las Palmas de Gran Canaria</provincia>
+    <pais>España</pais>
+  </lugar>
+  <lugar>
+    <nombre>Lanzarote</nombre>
+    <provincia>Las Palmas de Gran Canaria</provincia>
+    <pais>España</pais>
+  </lugar>
+  <lugar>
+    <nombre>Fuerteventura</nombre>
+    <provincia>Las Palmas de Gran Canaria</provincia>
+    <pais>España</pais>
+  </lugar>
+  <lugar>
     <nombre>La Graciosa</nombre>
     <provincia>Las Palmas de Gran Canaria</provincia>
+    <pais>España</pais>
+  </lugar>
+  <lugar>
+    <nombre>Mallorca</nombre>
+    <provincia>Islas Baleares</provincia>
+    <pais>España</pais>
+  </lugar>
+  <lugar>
+    <nombre>Menorca</nombre>
+    <provincia>Islas Baleares</provincia>
+    <pais>España</pais>
+  </lugar>
+  <lugar>
+    <nombre>Ibiza</nombre>
+    <provincia>Islas Baleares</provincia>
+    <pais>España</pais>
+  </lugar>
+  <lugar>
+    <nombre>Formentera</nombre>
+    <provincia>Islas Baleares</provincia>
+    <pais>España</pais>
+  </lugar>
+  <lugar>
+    <nombre>Cabrera</nombre>
+    <provincia>Islas Baleares</provincia>
     <pais>España</pais>
   </lugar>
 </document>
