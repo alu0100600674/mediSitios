@@ -26,7 +26,7 @@ get '/' do
 end
 
 get '/recomendados' do
-  TOTAL = 8
+  TOTAL = 14
   N_SITIOS = 4
 
   sitio = Array.new
