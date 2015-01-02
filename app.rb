@@ -29,7 +29,7 @@ get '/recomendados' do
 
   sitio = Array.new
   for i in 0...N_SITIOS do
-    puts "i = #{i}"
+    # puts "i = #{i}"
     tmp = rand(TOTAL)
     while(tmp == 0) do
       tmp = rand(TOTAL)
@@ -37,16 +37,16 @@ get '/recomendados' do
     sitio.push(tmp)
   end
 
-  for i in 0...N_SITIOS do
-    puts "* #{sitio[i]}"
-  end
+  # for i in 0...N_SITIOS do
+  #   puts "* #{sitio[i]}"
+  # end
 
   @listado = Lugares.buscarporid(sitio[0].to_i, sitio[1].to_i, sitio[2].to_i, sitio[3].to_i)
-#  @listado = Lugares.buscarporid(1,2,3,4)
+  # @listado = Lugares.buscarporid(1,2,3,4)
 
-  puts '----------------------------'
-  puts @listado
-  puts '----------------------------'
+  # puts '----------------------------'
+  # puts @listado
+  # puts '----------------------------'
 
   erb :recomendados
 end
