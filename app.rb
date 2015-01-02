@@ -102,7 +102,7 @@ get '/datos-de-prueba' do
   redirect '/'
 end
 
-get 'datos' do
+get '/datos' do
   xml = RestClient.get "https://raw.githubusercontent.com/alu0100600674/mediSitios/master/public/lugares.xml"
   datos = XmlSimple.xml_in(xml.to_s)['lugar']
 
