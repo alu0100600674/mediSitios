@@ -115,3 +115,11 @@ get '/datos' do
 
   redirect '/'
 end
+
+get '/borrar-datos' do
+  Lugares.all.destroy
+  Enfermedad.all.destroy
+  Beneficio.all.destroy
+
+  redirect '/'
+end
