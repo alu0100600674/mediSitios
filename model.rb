@@ -12,6 +12,10 @@ class Lugares
   def self.buscarsitio(id)
     repository(:default).adapter.select("SELECT * FROM Lugares WHERE UPPER(nombre) like '%#{id}%' OR UPPER(provincia) like '%#{id}%' OR UPPER(pais) like '%#{id}%'")
   end
+
+  def self.buscarporid(ide)
+    repository(:default).adapter.select("SELECT * FROM Lugares WHERE id like '%#{ide}%'")
+  end
 end
 
 class Beneficio

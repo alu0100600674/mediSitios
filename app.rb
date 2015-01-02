@@ -24,6 +24,23 @@ get '/' do
 end
 
 get '/recomendados' do
+  TOTAL = 10
+  N_SITIOS = 4
+
+  @sitio = Array.new
+  for i in 0...N_SITIOS do
+    puts "i = #{i}"
+    tmp = rand(TOTAL)
+    while(tmp == 0) do
+      tmp = rand(TOTAL)
+    end
+    @sitio.push(tmp)
+  end
+
+  for i in 0...N_SITIOS do
+    @listado = Lugares.buscarporid(@sitio[i])
+  end
+
   erb :recomendados
 end
 

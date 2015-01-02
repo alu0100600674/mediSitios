@@ -1,1 +1,25 @@
 <h3>¡Hoy te recomendamos estos lugares!</h3>
+
+<p>
+  <br>
+  <% if @listado.length > 0 %>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <td class="col-md-4"><b> Lugar </b></td>
+          <td class="col-md-4"><b> Provincia </b></td>
+          <td class="col-md-4"><b> País </b></td>
+        </tr>
+      </thead>
+      <tbody>
+        <% @listado.each do |valor| %>
+          <tr>
+            <td> <%= valor.nombre %> </td>
+            <td> <%= valor.provincia %> </td>
+            <td> <%= valor.pais %> </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  <% end %>
+</p>
