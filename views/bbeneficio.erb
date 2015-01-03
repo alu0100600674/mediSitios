@@ -1,4 +1,4 @@
-<h3>Busca lugares con respecto a un beneficio</h3>
+<h3>Busca un beneficio para ver en que sitio poder obtenerlo</h3>
 <br>
 <form class="form-inline" action="/buscar-beneficio" method="post">
   <div class="form-group">
@@ -16,16 +16,14 @@
       <table class="table table-hover">
         <thead>
           <tr>
-            <td class="col-md-3"><b> Beneficio </b></td>
-            <td class="col-md-3"><b> Lugar </b></td>
-            <td class="col-md-3"><b> Provincia </b></td>
-            <td class="col-md-3"><b> País </b></td>
+            <td class="col-md-4"><b> Lugar </b></td>
+            <td class="col-md-4"><b> Provincia </b></td>
+            <td class="col-md-4"><b> País </b></td>
           </tr>
         </thead>
         <tbody>
           <% @listado.each do |valor| %>
             <tr>
-              <td> <%= valor.n_ben %> </td>
               <td> <%= valor.nombre %> </td>
               <td> <%= valor.provincia %> </td>
               <td> <%= valor.pais %> </td>

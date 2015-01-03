@@ -19,6 +19,14 @@ class Lugares
   def self.buscarporid(id1, id2, id3, id4)
     repository(:default).adapter.select("SELECT * FROM Lugares WHERE id == '#{id1}' OR id == '#{id2}' OR id == '#{id3}' OR id == '#{id4}'")
   end
+
+  def self.buscarenfermedad(id)
+    repository(:default).adapter.select("SELECT * FROM Lugares WHERE UPPER(lista_enfermedades) like '%#{id}%'")
+  end
+
+  def self.buscarbeneficio(id)
+    repository(:default).adapter.select("SELECT * FROM Lugares WHERE UPPER(lista_beneficios) like '%#{id}%'")
+  end
 end
 
 # class Beneficio

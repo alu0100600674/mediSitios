@@ -69,8 +69,8 @@ get '/buscar-enfermedad' do
 end
 
 post '/buscar-enfermedad' do
-  lugar = params[:enfermedades].upcase
-  @listado = Enfermedad.buscarsitio(lugar)
+  enfermedad = params[:enfermedades].upcase
+  @listado = Enfermedad.buscarenfermedad(enfermedad)
 
   erb :benfermedad
 end
@@ -80,8 +80,8 @@ get '/buscar-beneficio' do
 end
 
 post '/buscar-beneficio' do
-  lugar = params[:beneficios].upcase
-  @listado = Beneficio.buscarsitio(lugar)
+  beneficio = params[:beneficios].upcase
+  @listado = Beneficio.buscarbeneficio(beneficio)
 
   erb :bbeneficio
 end
