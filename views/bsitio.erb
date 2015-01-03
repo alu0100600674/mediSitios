@@ -16,9 +16,11 @@
       <table class="table table-hover">
         <thead>
           <tr>
-            <td class="col-md-4"><b> Lugar </b></td>
-            <td class="col-md-4"><b> Provincia </b></td>
-            <td class="col-md-4"><b> País </b></td>
+            <td class="col-md-2"><b> Lugar </b></td>
+            <td class="col-md-2"><b> Provincia </b></td>
+            <td class="col-md-2"><b> País </b></td>
+            <td class="col-md-4"><b> Enfermedades </b></td>
+            <td class="col-md-4"><b> Beneficios </b></td>
           </tr>
         </thead>
         <tbody>
@@ -27,6 +29,8 @@
               <td> <%= valor.nombre %> </td>
               <td> <%= valor.provincia %> </td>
               <td> <%= valor.pais %> </td>
+              <td> <%= valor.lista_enfermedades %> </td>
+              <td> <%= valor.lista_beneficios %> </td>
             </tr>
           <% end %>
         </tbody>

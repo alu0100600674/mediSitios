@@ -4,115 +4,161 @@
     <nombre>Tenerife</nombre>
     <provincia>S/C de Tenerife</provincia>
     <pais>España</pais>
+    <enfermedades>Gripe, Bronquitis.</enfermedades>
+    <beneficios>Buen clima todo el año.</beneficios>
   </lugar>
   <lugar>
     <nombre>La Palma</nombre>
     <provincia>S/C de Tenerife</provincia>
     <pais>España</pais>
+    <enfermedades>Gripe, Bronquitis.</enfermedades>
+    <beneficios>Buen clima todo el año.</beneficios>
   </lugar>
   <lugar>
     <nombre>La Gomera</nombre>
     <provincia>S/C de Tenerife</provincia>
     <pais>España</pais>
+    <enfermedades>Gripe, Bronquitis.</enfermedades>
+    <beneficios>Buen clima todo el año.</beneficios>
   </lugar>
   <lugar>
     <nombre>El Hierro</nombre>
     <provincia>S/C de Tenerife</provincia>
     <pais>España</pais>
+    <enfermedades>Gripe, Bronquitis.</enfermedades>
+    <beneficios>Buen clima todo el año.</beneficios>
   </lugar>
   <lugar>
     <nombre>Gran Canaria</nombre>
     <provincia>Las Palmas de Gran Canaria</provincia>
     <pais>España</pais>
+    <enfermedades>Gripe, Bronquitis.</enfermedades>
+    <beneficios>Buen clima todo el año.</beneficios>
   </lugar>
   <lugar>
     <nombre>Lanzarote</nombre>
     <provincia>Las Palmas de Gran Canaria</provincia>
     <pais>España</pais>
+    <enfermedades>Gripe, Bronquitis.</enfermedades>
+    <beneficios>Buen clima todo el año. Buenas playas.</beneficios>
   </lugar>
   <lugar>
     <nombre>Fuerteventura</nombre>
     <provincia>Las Palmas de Gran Canaria</provincia>
     <pais>España</pais>
+    <enfermedades>Gripe, Bronquitis.</enfermedades>
+    <beneficios>Buen clima todo el año. Buenas playas.</beneficios>
   </lugar>
   <lugar>
     <nombre>La Graciosa</nombre>
     <provincia>Las Palmas de Gran Canaria</provincia>
     <pais>España</pais>
+    <enfermedades>Gripe, Bronquitis.</enfermedades>
+    <beneficios>Buen clima todo el año.</beneficios>
   </lugar>
   <lugar>
     <nombre>Mallorca</nombre>
     <provincia>Islas Baleares</provincia>
     <pais>España</pais>
+    <enfermedades></enfermedades>
+    <beneficios>Buenas Playas.</beneficios>
   </lugar>
   <lugar>
     <nombre>Menorca</nombre>
     <provincia>Islas Baleares</provincia>
     <pais>España</pais>
+    <enfermedades></enfermedades>
+    <beneficios>Buenas Playas.</beneficios>
   </lugar>
   <lugar>
     <nombre>Ibiza</nombre>
     <provincia>Islas Baleares</provincia>
     <pais>España</pais>
+    <enfermedades></enfermedades>
+    <beneficios>Buenas Playas.</beneficios>
   </lugar>
   <lugar>
     <nombre>Formentera</nombre>
     <provincia>Islas Baleares</provincia>
     <pais>España</pais>
+    <enfermedades></enfermedades>
+    <beneficios>Buenas Playas.</beneficios>
   </lugar>
   <lugar>
     <nombre>Cabrera</nombre>
     <provincia>Islas Baleares</provincia>
     <pais>España</pais>
+    <enfermedades></enfermedades>
+    <beneficios>Buenas Playas.</beneficios>
   </lugar>
   <lugar>
     <nombre>Santander</nombre>
     <provincia>Cantabria</provincia>
     <pais>España</pais>
+    <enfermedades></enfermedades>
+    <beneficios>Sitio frío.</beneficios>
   </lugar>
   <lugar>
     <nombre>Gandía</nombre>
     <provincia>Valencia</provincia>
     <pais>España</pais>
+    <enfermedades></enfermedades>
+    <beneficios>Buenas playas.</beneficios>
   </lugar>
   <lugar>
     <nombre>Marbella</nombre>
     <provincia>Málaga</provincia>
     <pais>España</pais>
+    <enfermedades></enfermedades>
+    <beneficios></beneficios>
   </lugar>
   <lugar>
     <nombre>Vigo</nombre>
     <provincia>Pontevedra</provincia>
     <pais>España</pais>
+    <enfermedades></enfermedades>
+    <beneficios></beneficios>
   </lugar>
   <lugar>
     <nombre>Cobra</nombre>
     <provincia>Córdoba</provincia>
     <pais>España</pais>
+    <enfermedades></enfermedades>
+    <beneficios></beneficios>
   </lugar>
   <lugar>
     <nombre>Lucena</nombre>
     <provincia>Córdoba</provincia>
     <pais>España</pais>
+    <enfermedades></enfermedades>
+    <beneficios></beneficios>
   </lugar>
   <lugar>
     <nombre>Mérida</nombre>
     <provincia>Badajoz</provincia>
     <pais>España</pais>
+    <enfermedades></enfermedades>
+    <beneficios></beneficios>
   </lugar>
   <lugar>
     <nombre>Zafra</nombre>
     <provincia>Badajoz</provincia>
     <pais>España</pais>
+    <enfermedades></enfermedades>
+    <beneficios></beneficios>
   </lugar>
   <lugar>
     <nombre>Elche</nombre>
     <provincia>Alicante</provincia>
     <pais>España</pais>
+    <enfermedades></enfermedades>
+    <beneficios></beneficios>
   </lugar>
   <lugar>
     <nombre>Alcoy</nombre>
     <provincia>Alicante</provincia>
     <pais>España</pais>
+    <enfermedades></enfermedades>
+    <beneficios></beneficios>
   </lugar>
 </document>

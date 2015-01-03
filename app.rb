@@ -95,9 +95,9 @@ get '/datos-de-prueba' do
   Lugares.first_or_create(:nombre => "Lanzarote", :provincia => "Las Palmas de Gran Canaria", :pais => "España")
   Lugares.first_or_create(:nombre => "Fuerteventura", :provincia => "Las Palmas de Gran Canaria", :pais => "España")
 
-  Enfermedad.first_or_create(:lugares_id => 1, :n_enf => "Gripe")
-
-  Beneficio.first_or_create(:lugares_id => 1, :n_ben => "Buen tiempo")
+  # Enfermedad.first_or_create(:lugares_id => 1, :n_enf => "Gripe")
+  #
+  # Beneficio.first_or_create(:lugares_id => 1, :n_ben => "Buen tiempo")
 
   redirect '/'
 end
@@ -110,7 +110,9 @@ get '/datos' do
 		nombre = i["nombre"].to_s.delete "[\"]"
 		provincia = i["provincia"].to_s.delete "[\"]"
 		pais = i["pais"].to_s.delete "[\"]"
-		Lugares.first_or_create(:nombre => nombre, :provincia => provincia, :pais => pais)
+    enf = i["enfermedades"].to_s.delete "[\"]"
+    ben = i["beneficios"].to_s.delete "[\"]"
+		Lugares.first_or_create(:nombre => nombre, :provincia => provincia, :pais => pais, :lista_enfermedades => enf, :lista_beneficios => ben)
 	end
 
   redirect '/'
@@ -118,8 +120,8 @@ end
 
 get '/borrar-datos' do
   Lugares.all.destroy
-  Enfermedad.all.destroy
-  Beneficio.all.destroy
+  # Enfermedad.all.destroy
+  # Beneficio.all.destroy
 
   redirect '/'
 end
