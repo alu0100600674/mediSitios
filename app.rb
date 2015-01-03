@@ -70,7 +70,7 @@ end
 
 post '/buscar-enfermedad' do
   enfermedad = params[:enfermedades].upcase
-  @listado = Enfermedad.buscarenfermedad(enfermedad)
+  @listado = Lugares.buscarenfermedad(enfermedad)
 
   erb :benfermedad
 end
@@ -81,7 +81,7 @@ end
 
 post '/buscar-beneficio' do
   beneficio = params[:beneficios].upcase
-  @listado = Beneficio.buscarbeneficio(beneficio)
+  @listado = Lugares.buscarbeneficio(beneficio)
 
   erb :bbeneficio
 end
